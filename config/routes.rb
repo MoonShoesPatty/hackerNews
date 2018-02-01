@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#goodbye'
+  get 'api_calls/getStoryIDs'
+
+  root 'api_calls#getStoryIDs'
 end
